@@ -1,0 +1,93 @@
+/*general style*/
+* {
+    box-sizing: border-box;
+    }
+/*body*/
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/08/21/11/wood-1963988_960_720.jpg);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.625;
+}
+
+/*nav bar*/
+.menu{
+  display: flex; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+a {
+    text-decoration:none;
+    border: 1px solid rgb(252, 252, 252);
+    display: inline-block;
+    padding: 1em 5em; /*centro il texto*/
+    color:white;
+    background-color: rgb(13, 14, 14); /*color de fondo*/
+    opacity: .8;
+    text-align: center;
+    line-height: 30px;
+    
+}
+a:hover{
+    background-color: rgb(12, 12, 12);
+    opacity: .7;
+}
+/*web title*/
+h1{
+    font-family: Lobster, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+.fondo{
+    background-color: aliceblue;
+    opacity: .8;
+    padding: 15px;
+}
+/*Example of Polaroid Image Gallery*/
+div.polaroid {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: inline-block;
+    margin: 15px;
+  }
+  
+img {width: 100%}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+/*Example of Side-by-Side Image Gallery*/
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  display: flex; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*footer*/
+footer{
+    min-height: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    height: 30px;
+}
+
