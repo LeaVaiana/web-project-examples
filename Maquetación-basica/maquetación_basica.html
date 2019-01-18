@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*Per facilitare la maquetazione mettiamo colore di fondo a tutte le sezioni e poco a poco che le completiamo lo togliamo*/
+        body {
+            background-color: grey;
+        }
+        .contenedor{
+            width: 960px;
+            height: 720px;
+            margin: auto;
+            background-color: white;
+        }
+        header{
+            height: 75px;
+            /*background-color:rgb(169, 169, 223);*/
+            position: relative;
+        }
+        #section1{
+            height:280px;
+            /*background-color: rgb(168, 104, 228);*/
+        }
+        #section2{
+            height:280px;
+            background-color: rgb(220, 231, 236);
+            text-align:center;/*per centrare i 3 article, se lo metto nell'article mi centra il testo*/
+            /*opz3: per centrare i 3 article, padding top 25px;box-sizing:border box (per evitare che cresca la section2)*/
+            display: flex; /*opz4: in combinazione con justify-content e align_items*/
+            justify-content: center; /*(centra orizzontalmente)*/
+            align-items: center; /*(centra verticalmente)*/
+            
+        }
+        
+        article{
+            width: 265px;
+            height: 230px;
+            /*background-color: azure;*/
+            display: inline-block;/*per aver le 3 sezioni in linea dentro la sezione 2*/
+            /*opz1: position: relative; position in combinazione con top; top: 25px;*/
+            /*opz 2: margin-top: 25px; */
+            margin: 0px 10px;/*per separare gli article*/
+            text-align: justify;
+            font-family: arial;
+            font-size: 14px;
+        }
+        nav{
+            width: 300px;
+            height: 30px;
+            /*background-color: brown;*/
+            /*float: right;posizione naturale sotto il logo*/
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+        nav a{/*etichetta a che sitrova dentro un nav*/
+            font-family: arial;
+            font-size: 0.8em;
+            text-decoration: none;
+            line-height: 30px;
+            margin-left: 10px;/*per separare i testi tra di loro*/
+        }
+
+        nav a:hover{
+            color:rgb(233, 57, 174);
+        }
+        article h2{/*per avere il titolo appiccicato al bordo superiore dell'article togliere il margin che viene per difetto con l'h2*/
+            margin-top: 0px;
+            /*appare centrato perchè la sezione 2 ha il text-align center, ma con il display flex non è necessario*/
+            text-align: left;
+        }
+        footer{
+            height:90px;
+            background-color: rgb(117, 224, 158);
+            padding: 10px;
+            box-sizing: border-box;/*per non far crescere il footer*/
+            position:relative;
+        }
+        footer nav {/*altrimenti segue lo stesso stile del nav contenunto nell'header*/
+            top: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <img src="img/vuit.png">
+            <nav>
+                <a href="#">Inizio</a>
+                <a href="#">Video</a>
+                <a href="#">Album</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <section id="section1"><img src="img/img_sec1.png"></section>
+        <section id="section2">
+            <article id="article1">
+                <h2>Article 1</h2>
+                <img src="img/sec_app.png">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet eligendi a cumque ab pariatur
+                    repudiandae nihil est sunt nisi facilis soribu.</span>
+            </article>
+            <article id="article1">
+                <h2>Article 2</h2>
+                <img src="img/sec_app.png">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet eligendi a cumque ab pariatur
+                    repudiandae nihil est sunt nisi facilis soribu.</span>
+            </article></article>
+            <article id="article1">
+                <h2>Article 3</h2>
+                <img src="img/sec_app.png">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eveniet eligendi a cumque ab pariatur
+                    repudiandae nihil est sunt nisi facilis soribu.</span>
+            </article>
+        </section>
+        <footer>
+            <a href="#">cibernarium.cat</a>
+            <nav>
+                    <a href="#">Inizio</a>
+                    <a href="#">Video</a>
+                    <a href="#">Album</a>
+                    <a href="#">Contacto</a>
+                </nav>
+        </footer>
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
