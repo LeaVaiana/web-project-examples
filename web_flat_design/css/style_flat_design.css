@@ -1,0 +1,139 @@
+.contenedor {
+    /*per evitare la "spaghettizzazione, gli diamo un width max y margin auto**/
+    max-width: 1600px;
+    margin: auto;
+}
+header {
+    height: 600px;
+    background-image: url('../img/punta_cana_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;/*equivalente a 100% 100%*/
+    background-position: center;
+    font-size: 50px;
+    font-family: arial;
+    color:white;
+
+    /*centrare il titolo*/
+    display: flex;/*gli elementi dentro del contenedor si comportano come elementi flessibili e la proprietá display-flex cambia il comportamento di questi elementi interni, in combinazione con align items e justify content*/
+    align-items: center;/*mi centra l'h1 verticalmente*/
+    justify-content: center;/*centra orizzontalmente*/
+
+    /*posicionar la barra de navegación */
+    position: relative;
+}
+
+nav {
+    height: 80px;
+    background-color:  rgb(27, 115, 230);
+
+    /*posizionare la barra nella parte inferiore del header*/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    /*necessario indicare espressamente con il position absolute se non ha contenuto, che la caja mantenga il 100% di ampiezza della caja contenedora*/
+    width: 100%;
+
+    /*caja semitransparente*/
+    opacity: 0.5;
+
+    /*centrare le opzioni di navigazione*/
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;/*una accanto all'altra*/
+    list-style-type: none;
+}
+
+nav ul {
+    /*eliminar el margen superior y izquierdo que tiene por defecto la etiqueta ul*/
+    margin: 0px;
+}
+
+nav a {
+    color: white;/*necessario specificare il colore nell'a, perche a ha colore proprio blu*/
+    text-decoration: none;
+
+    /*cambiar el display para que acepte el ancho*/
+    width: 320px;
+    display: inline-block;
+
+    /*centrado vertical de los textos*/
+    line-height: 80px;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+#section1 img{
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+p.clear {
+    clear: both;
+  }
+
+
+#seccion2 {
+    /*centrar las cajas con inline-block*/
+    text-align: center;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+article {
+    width: 30%;/*in combinazione con min-width*/
+    min-width: 250px;
+    display: inline-block;/*Una accanto all'altra*/
+    vertical-align: top;
+    text-align: justify;
+
+    /*margine per separare las cajas una dall'altra*/
+    margin: auto 10px;
+}
+
+article img {
+    width: 100%;/*rispetto all'immagine contenedora*/
+}
+
+#seccion3 {
+    /*centrar las cajas*/
+    text-align: center;/*estilo que se hereda, vale anche per il formulario*/
+}
+
+#seccion3 div {
+    width: 600px;
+    height: 450px;
+    border: 1px solid blue;
+
+    /*cajas una al lado de la otra y alineadas por el borde superior*/
+    display: inline-block;
+    vertical-align: top;
+
+    /*margen interior que no redimensiona la caja*/
+    padding: 20px;
+    box-sizing: border-box;
+
+    /*sobreescribir el estilo de alineación de texto*/
+    text-align: left;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*el ancho de 350 aplica a todas las etiquetas input excepto la que sea de tipo submit*/
+input:not([type='submit']) {
+    width: 350px;
+}
+
+textarea {
+    width: 350px;
+    height: 200px;
+}
