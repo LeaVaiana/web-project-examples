@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evalución</title>
+    <link rel=stylesheet href="css/style.css"type="text/css">
+</head>
+<body>
+    <div class="contenedor">
+        <!--HEADER-->
+        <header>
+            <img src="img/logo.png">
+            <h1>Titulo de la pagina</h1>
+        </header>
+        <!--NAV-->
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Home</a>
+            <a href="#">Servicios</a>
+            <a href="#">Blog</a>
+        </nav>
+        <!--MAIN-->
+        <div id="main">
+            <!--LEFT-->
+            <div id="left">
+                <!--SECTION1-->
+                <section id="section1">
+                    <h2>Imagen y texto</h2>
+                    <div class="textoimg">
+                    <img src="img/html5-imagen.jpg" alt="HTML5" title="HTML5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fuga similique voluptas dolorem? Doloremque
+                        deleniti provident <strong> estoy en negrita </strong>deserunt velit laborum excepturi error quas. Illum, nobis temporibus? Dicta illum
+                        expedita iste eum.</p>
+                    <p>Lorem ipsum dolor sit <span class="blue">amet consectetur adipisicing elit.</span> Tenetur placeat voluptas facilis eum nisi quibusdam
+                        dolores ad aperiam quos explicabo! <em> Yo soy una cursiva </em>Quaerat exercitationem nobis labore distinctio similique eaque quos
+                        totam dignissimos.</p>
+                    <p class="clear">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quae suscipit numquam aliquid
+                        dolorum quis<span class="blue"> texto azul </span>quia dolore soluta cupiditate voluptate? Eos quos deleniti voluptates ipsa. Debitis expedita totam
+                        autem ratione!</p>
+                    </div>
+                </section>
+                <!--FORMULARIO-->
+                <section id="section2">
+                        <h2>Formulario de contacto</h2>
+                        <div class="textoimg">
+                        <div id='formulario'>
+                                <form method='post' action='#'>
+                                    <label>Nombre y apellidos</label>
+                                    <input type="text" name="nombre" required>
+                                    <br><br>
+                                    <label>Correo electrónico</label>
+                                    <input type="email" name="correo" required>
+                                    <br><br>
+                                    <label>Subscribirse:</label>
+                                    <span>SI</span><input type="radio" name=publicidad checked value="si">
+                                    <span>NO</span><input type="radio" name=publicidad value="no">
+                                    <br><br>
+                                    <label>Elija curso</label>
+                                    <select name="ciudad">
+                                        <option>HTML</option>
+                                        <option>Javascript</option>
+                                        <option>PHP</option>
+                                    </select>
+                                    <br><br>
+                                    <div class="enter">
+                                    <input type="submit" name="enviar" value="Enviar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </section>
+            </div>
+
+            <!--RIGHT-->
+            <div id="right">
+                <section id="section3">
+                        <div class="yellow">
+                            <h2 class="fixed">Texto con scroll</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error necessitatibus assumenda itaque obcaecati
+                                debitis nihil aut, eaque ea sequi adipisci ut dignissimos repellat pariatur quaerat officia ad harum
+                                sapiente. Molestias.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error necessitatibus assumenda
+                                itaque obcaecati
+                                debitis nihil aut, eaque ea sequi adipisci ut dignissimos repellat pariatur quaerat officia ad harum
+                                sapiente. Molestias.</p>
+                        </div>
+                </section>
+                <section id="section4">
+                    <div class="yellow">
+                        <h2>Lista</h2>
+                        <ul>
+                            <li>Elemento1</li>
+                            <li>Elemento2</li>
+                            <li>Elemento3</li>
+                            <li>Elemento4</li>
+                            <li>Elemento5</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+       
+    </div>
+    
+</body>
+</html>

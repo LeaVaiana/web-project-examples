@@ -1,0 +1,139 @@
+body{
+    background-image: url(../img/bg.jpg);
+}
+* {
+    font-family: arial;
+    text-align: justify;
+    box-sizing:border-box;
+}
+
+.contenedor{
+    max-width: 960px;/*para evitar espaguetización doy max width*/
+    margin: auto;
+    position:relative;
+}
+header{
+    height: 90px;
+    position: relative;
+    margin:10px;
+}
+h1{
+    position:absolute;
+    bottom: 5px;
+    left: 200px;
+    color: white;
+    font-size: 24px;
+    
+}
+h2{
+    background-color: grey;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin: 20px;
+}
+/*SE PIDE UN PADDING PARA TODAS LAS SECCIONES (pongo la opción abajo), SIN EMBARGO MI SOLUCIÓN ME PARECE MAS SIMILAR A LA IMAGEN PROPUESTA*/
+/*#section1, #section2, #section3, #section4{
+    padding: 25px;
+}*/
+
+#section1{
+    padding: 30px 0px 0px 0px;
+}
+
+#section1 img{
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+p.clear {
+    clear: both;
+  }
+
+nav {
+    background-color:grey;
+    height: 35px;
+    text-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(65, 64, 64) , rgb(196, 196, 196));
+    box-shadow: 5px 5px 2px black;
+    margin: 20px auto;
+    /*vertical-align: middle;*/
+}
+a{
+    padding: 8px;
+    text-decoration: none;
+    color: white; 
+    line-height: 30px;
+    transition: 1s;
+}
+a:hover{
+    color: yellow;
+    background-color: aquamarine;
+}
+
+#left{
+    width: 680px;
+    display:inline-block;
+    vertical-align: top;
+    background-color:white;
+    border-radius:15px;
+    box-shadow: 5px 10px 18px black; 
+    margin-right: 15px; 
+}
+.textoimg{
+    margin:15px;
+}
+#section2{
+    display:block;
+    border-radius: 10px;
+}
+
+#right{
+    display:block;
+    width: 260px;
+    display:inline-block;
+}
+#section3{
+    width: 260px;
+    height: 300px;
+    background-color:rgb(241, 197, 52);
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px black;
+    overflow: scroll;
+    padding:10px;
+    margin-bottom: 10px;
+
+}
+#section4{
+    width: 260px;
+    height: 300px;
+    background-color:rgb(241, 197, 52);
+    display:block;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px black;
+    padding-top:15px;
+}
+li{
+    display:table;
+    margin: auto;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+}
+.enter{
+    text-align:center;
+}
+.fixed{
+    position: sticky;
+    top: 0px;
+}
+.blue{
+    color:blue;
+}
